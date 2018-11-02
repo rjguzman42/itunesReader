@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E2EE5DE218B5DB200F5E7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE5DD218B5DB200F5E7B2 /* AppDelegate.swift */; };
+		5E2EE5E3218B5DB200F5E7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2EE5E1218B5DB200F5E7B2 /* Main.storyboard */; };
+		5E2EE5E5218B5DB300F5E7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2EE5E4218B5DB300F5E7B2 /* Assets.xcassets */; };
+		5E2EE5E8218B5DB300F5E7B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2EE5E6218B5DB300F5E7B2 /* LaunchScreen.storyboard */; };
+		5E2EE5F9218B5ECC00F5E7B2 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE5F8218B5ECC00F5E7B2 /* MusicVC.swift */; };
+		5E2EE5FB218B5F4200F5E7B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE5FA218B5F4200F5E7B2 /* Constants.swift */; };
+		5E2EE5FD218B5FC500F5E7B2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE5FC218B5FC500F5E7B2 /* DataManager.swift */; };
+		5E2EE5FF218B629400F5E7B2 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE5FE218B629400F5E7B2 /* Media.swift */; };
+		5E2EE601218B634700F5E7B2 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE600218B634700F5E7B2 /* Genre.swift */; };
+		5E2EE605218B63AA00F5E7B2 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE604218B63AA00F5E7B2 /* LibraryAPI.swift */; };
+		5E2EE607218B683B00F5E7B2 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE606218B683B00F5E7B2 /* MoviesVC.swift */; };
+		5E2EE609218B693000F5E7B2 /* MediaKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EE608218B693000F5E7B2 /* MediaKind.swift */; };
+		5EC9606E218C8AE800B9EAF8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9606D218C8AE800B9EAF8 /* Country.swift */; };
+		5EC96070218C909400B9EAF8 /* ItunesGeneralData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9606F218C909400B9EAF8 /* ItunesGeneralData.swift */; };
+		5EC96072218C912200B9EAF8 /* ItunesFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC96071218C912200B9EAF8 /* ItunesFeed.swift */; };
+		5EC96076218CA50400B9EAF8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC96075218CA50400B9EAF8 /* UIView+Extension.swift */; };
+		5EC96078218CA6E700B9EAF8 /* VerticalMediaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC96077218CA6E700B9EAF8 /* VerticalMediaTableCell.swift */; };
+		5EF5EA5D218B8925006DD60E /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA5C218B8925006DD60E /* APIResult.swift */; };
+		5EF5EA5F218B8969006DD60E /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA5E218B8969006DD60E /* APIRouter.swift */; };
+		5EF5EA62218B89F2006DD60E /* ItunesAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA61218B89F2006DD60E /* ItunesAPIRouter.swift */; };
+		5EF5EA64218B8AE5006DD60E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA63218B8AE5006DD60E /* HTTPMethod.swift */; };
+		5EF5EA67218B8CA1006DD60E /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA66218B8CA1006DD60E /* FeedType.swift */; };
+		5EF5EA69218B8D15006DD60E /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA68218B8D15006DD60E /* MediaType.swift */; };
+		5EF5EA6B218B9352006DD60E /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA6A218B9352006DD60E /* HTTPManager.swift */; };
+		5EF5EA6D218B9389006DD60E /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA6C218B9389006DD60E /* DebugLog.swift */; };
+		5EF5EA6F218B93B4006DD60E /* APIClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA6E218B93B4006DD60E /* APIClientType.swift */; };
+		5EF5EA72218B9DD2006DD60E /* SquareMediaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA71218B9DD2006DD60E /* SquareMediaTableCell.swift */; };
+		5EF5EA74218B9F50006DD60E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5EA73218B9F50006DD60E /* Theme.swift */; };
+		F44F29E1FE7EE7281C24BE37 /* Pods_ItunesReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1DBFCBEA7048FB936653F2 /* Pods_ItunesReader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13A15D854CEF72FEA8D83148 /* Pods-ItunesReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesReader/Pods-ItunesReader.release.xcconfig"; sourceTree = "<group>"; };
+		5E2EE5DA218B5DB200F5E7B2 /* ItunesReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2EE5DD218B5DB200F5E7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E2EE5E2218B5DB200F5E7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E2EE5E4218B5DB300F5E7B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E2EE5E7218B5DB300F5E7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E2EE5E9218B5DB300F5E7B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E2EE5F8218B5ECC00F5E7B2 /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
+		5E2EE5FA218B5F4200F5E7B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E2EE5FC218B5FC500F5E7B2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		5E2EE5FE218B629400F5E7B2 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		5E2EE600218B634700F5E7B2 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		5E2EE604218B63AA00F5E7B2 /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		5E2EE606218B683B00F5E7B2 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
+		5E2EE608218B693000F5E7B2 /* MediaKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaKind.swift; sourceTree = "<group>"; };
+		5EC9606D218C8AE800B9EAF8 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		5EC9606F218C909400B9EAF8 /* ItunesGeneralData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesGeneralData.swift; sourceTree = "<group>"; };
+		5EC96071218C912200B9EAF8 /* ItunesFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesFeed.swift; sourceTree = "<group>"; };
+		5EC96075218CA50400B9EAF8 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5EC96077218CA6E700B9EAF8 /* VerticalMediaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalMediaTableCell.swift; sourceTree = "<group>"; };
+		5EF5EA5C218B8925006DD60E /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		5EF5EA5E218B8969006DD60E /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		5EF5EA61218B89F2006DD60E /* ItunesAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPIRouter.swift; sourceTree = "<group>"; };
+		5EF5EA63218B8AE5006DD60E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5EF5EA66218B8CA1006DD60E /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
+		5EF5EA68218B8D15006DD60E /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		5EF5EA6A218B9352006DD60E /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		5EF5EA6C218B9389006DD60E /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		5EF5EA6E218B93B4006DD60E /* APIClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientType.swift; sourceTree = "<group>"; };
+		5EF5EA71218B9DD2006DD60E /* SquareMediaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareMediaTableCell.swift; sourceTree = "<group>"; };
+		5EF5EA73218B9F50006DD60E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		7B1DBFCBEA7048FB936653F2 /* Pods_ItunesReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A97BE65D013B8CEB74EE0F /* Pods-ItunesReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesReader/Pods-ItunesReader.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E2EE5D7218B5DB200F5E7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44F29E1FE7EE7281C24BE37 /* Pods_ItunesReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38A4B46E49E72E605DF41814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B1DBFCBEA7048FB936653F2 /* Pods_ItunesReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E2EE5D1218B5DB200F5E7B2 = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5DC218B5DB200F5E7B2 /* ItunesReader */,
+				5E2EE5DB218B5DB200F5E7B2 /* Products */,
+				D00C611AE65A8229282E6724 /* Pods */,
+				38A4B46E49E72E605DF41814 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E2EE5DB218B5DB200F5E7B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5DA218B5DB200F5E7B2 /* ItunesReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E2EE5DC218B5DB200F5E7B2 /* ItunesReader */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5F7218B5DFA00F5E7B2 /* Images */,
+				5E2EE5F6218B5DF200F5E7B2 /* Application */,
+				5E2EE5F5218B5DEC00F5E7B2 /* Controllers */,
+				5E2EE5F4218B5DE000F5E7B2 /* Models */,
+				5E2EE5F2218B5DCE00F5E7B2 /* Views */,
+				5E2EE5F3218B5DDA00F5E7B2 /* API */,
+				5E2EE5F1218B5DCA00F5E7B2 /* Helpers */,
+				5E2EE5F0218B5DC200F5E7B2 /* Extensions */,
+				5E2EE5EF218B5DB900F5E7B2 /* Resources */,
+			);
+			path = ItunesReader;
+			sourceTree = "<group>";
+		};
+		5E2EE5EF218B5DB900F5E7B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5E9218B5DB300F5E7B2 /* Info.plist */,
+				5E2EE5E6218B5DB300F5E7B2 /* LaunchScreen.storyboard */,
+				5E2EE5E1218B5DB200F5E7B2 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E2EE5F0218B5DC200F5E7B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EC96075218CA50400B9EAF8 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E2EE5F1218B5DCA00F5E7B2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5EF5EA73218B9F50006DD60E /* Theme.swift */,
+				5E2EE5FA218B5F4200F5E7B2 /* Constants.swift */,
+				5EF5EA6C218B9389006DD60E /* DebugLog.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5E2EE5F2218B5DCE00F5E7B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EF5EA70218B9CCD006DD60E /* Table Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E2EE5F3218B5DDA00F5E7B2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE604218B63AA00F5E7B2 /* LibraryAPI.swift */,
+				5E2EE602218B639700F5E7B2 /* HTTP */,
+				5E2EE603218B639D00F5E7B2 /* Persistency */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5E2EE5F4218B5DE000F5E7B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EF5EA65218B8C8E006DD60E /* ITunes */,
+				5E2EE5FC218B5FC500F5E7B2 /* DataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E2EE5F5218B5DEC00F5E7B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5F8218B5ECC00F5E7B2 /* MusicVC.swift */,
+				5E2EE606218B683B00F5E7B2 /* MoviesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E2EE5F6218B5DF200F5E7B2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5DD218B5DB200F5E7B2 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5E2EE5F7218B5DFA00F5E7B2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5E4218B5DB300F5E7B2 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5E2EE602218B639700F5E7B2 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				5EF5EA60218B89D4006DD60E /* Routers */,
+				5EF5EA6A218B9352006DD60E /* HTTPManager.swift */,
+				5EF5EA5C218B8925006DD60E /* APIResult.swift */,
+				5EF5EA63218B8AE5006DD60E /* HTTPMethod.swift */,
+				5EF5EA6E218B93B4006DD60E /* APIClientType.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		5E2EE603218B639D00F5E7B2 /* Persistency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistency;
+			sourceTree = "<group>";
+		};
+		5EF5EA60218B89D4006DD60E /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				5EF5EA5E218B8969006DD60E /* APIRouter.swift */,
+				5EF5EA61218B89F2006DD60E /* ItunesAPIRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		5EF5EA65218B8C8E006DD60E /* ITunes */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EE5FE218B629400F5E7B2 /* Media.swift */,
+				5E2EE600218B634700F5E7B2 /* Genre.swift */,
+				5E2EE608218B693000F5E7B2 /* MediaKind.swift */,
+				5EF5EA66218B8CA1006DD60E /* FeedType.swift */,
+				5EF5EA68218B8D15006DD60E /* MediaType.swift */,
+				5EC9606D218C8AE800B9EAF8 /* Country.swift */,
+				5EC9606F218C909400B9EAF8 /* ItunesGeneralData.swift */,
+				5EC96071218C912200B9EAF8 /* ItunesFeed.swift */,
+			);
+			path = ITunes;
+			sourceTree = "<group>";
+		};
+		5EF5EA70218B9CCD006DD60E /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5EF5EA71218B9DD2006DD60E /* SquareMediaTableCell.swift */,
+				5EC96077218CA6E700B9EAF8 /* VerticalMediaTableCell.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		D00C611AE65A8229282E6724 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8A97BE65D013B8CEB74EE0F /* Pods-ItunesReader.debug.xcconfig */,
+				13A15D854CEF72FEA8D83148 /* Pods-ItunesReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E2EE5D9218B5DB200F5E7B2 /* ItunesReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2EE5EC218B5DB300F5E7B2 /* Build configuration list for PBXNativeTarget "ItunesReader" */;
+			buildPhases = (
+				9E3744407105118DD3BDCA7B /* [CP] Check Pods Manifest.lock */,
+				5E2EE5D6218B5DB200F5E7B2 /* Sources */,
+				5E2EE5D7218B5DB200F5E7B2 /* Frameworks */,
+				5E2EE5D8218B5DB200F5E7B2 /* Resources */,
+				7DB9B027AB1BB24E9E92A768 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItunesReader;
+			productName = ItunesReader;
+			productReference = 5E2EE5DA218B5DB200F5E7B2 /* ItunesReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E2EE5D2218B5DB200F5E7B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Fortytwo Sports";
+				TargetAttributes = {
+					5E2EE5D9218B5DB200F5E7B2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 5E2EE5D5218B5DB200F5E7B2 /* Build configuration list for PBXProject "ItunesReader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E2EE5D1218B5DB200F5E7B2;
+			productRefGroup = 5E2EE5DB218B5DB200F5E7B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E2EE5D9218B5DB200F5E7B2 /* ItunesReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E2EE5D8218B5DB200F5E7B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2EE5E8218B5DB300F5E7B2 /* LaunchScreen.storyboard in Resources */,
+				5E2EE5E5218B5DB300F5E7B2 /* Assets.xcassets in Resources */,
+				5E2EE5E3218B5DB200F5E7B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DB9B027AB1BB24E9E92A768 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesReader/Pods-ItunesReader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesReader/Pods-ItunesReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3744407105118DD3BDCA7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E2EE5D6218B5DB200F5E7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF5EA69218B8D15006DD60E /* MediaType.swift in Sources */,
+				5EF5EA6D218B9389006DD60E /* DebugLog.swift in Sources */,
+				5E2EE5FF218B629400F5E7B2 /* Media.swift in Sources */,
+				5EC96072218C912200B9EAF8 /* ItunesFeed.swift in Sources */,
+				5EF5EA5D218B8925006DD60E /* APIResult.swift in Sources */,
+				5E2EE5F9218B5ECC00F5E7B2 /* MusicVC.swift in Sources */,
+				5EF5EA67218B8CA1006DD60E /* FeedType.swift in Sources */,
+				5EF5EA62218B89F2006DD60E /* ItunesAPIRouter.swift in Sources */,
+				5EC9606E218C8AE800B9EAF8 /* Country.swift in Sources */,
+				5E2EE5FD218B5FC500F5E7B2 /* DataManager.swift in Sources */,
+				5EF5EA6B218B9352006DD60E /* HTTPManager.swift in Sources */,
+				5E2EE601218B634700F5E7B2 /* Genre.swift in Sources */,
+				5E2EE609218B693000F5E7B2 /* MediaKind.swift in Sources */,
+				5E2EE5DE218B5DB200F5E7B2 /* AppDelegate.swift in Sources */,
+				5EF5EA5F218B8969006DD60E /* APIRouter.swift in Sources */,
+				5E2EE607218B683B00F5E7B2 /* MoviesVC.swift in Sources */,
+				5EC96070218C909400B9EAF8 /* ItunesGeneralData.swift in Sources */,
+				5EC96078218CA6E700B9EAF8 /* VerticalMediaTableCell.swift in Sources */,
+				5EF5EA64218B8AE5006DD60E /* HTTPMethod.swift in Sources */,
+				5EC96076218CA50400B9EAF8 /* UIView+Extension.swift in Sources */,
+				5E2EE5FB218B5F4200F5E7B2 /* Constants.swift in Sources */,
+				5E2EE605218B63AA00F5E7B2 /* LibraryAPI.swift in Sources */,
+				5EF5EA74218B9F50006DD60E /* Theme.swift in Sources */,
+				5EF5EA6F218B93B4006DD60E /* APIClientType.swift in Sources */,
+				5EF5EA72218B9DD2006DD60E /* SquareMediaTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E2EE5E1218B5DB200F5E7B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E2EE5E2218B5DB200F5E7B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E2EE5E6218B5DB300F5E7B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E2EE5E7218B5DB300F5E7B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E2EE5EA218B5DB300F5E7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E2EE5EB218B5DB300F5E7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E2EE5ED218B5DB300F5E7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A97BE65D013B8CEB74EE0F /* Pods-ItunesReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89G382F4AH;
+				INFOPLIST_FILE = ItunesReader/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ItunesReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E2EE5EE218B5DB300F5E7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A15D854CEF72FEA8D83148 /* Pods-ItunesReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89G382F4AH;
+				INFOPLIST_FILE = ItunesReader/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ItunesReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E2EE5D5218B5DB200F5E7B2 /* Build configuration list for PBXProject "ItunesReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2EE5EA218B5DB300F5E7B2 /* Debug */,
+				5E2EE5EB218B5DB300F5E7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2EE5EC218B5DB300F5E7B2 /* Build configuration list for PBXNativeTarget "ItunesReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2EE5ED218B5DB300F5E7B2 /* Debug */,
+				5E2EE5EE218B5DB300F5E7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E2EE5D2218B5DB200F5E7B2 /* Project object */;
+}
